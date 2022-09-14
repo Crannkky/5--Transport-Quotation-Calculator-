@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Transport Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/log-out.js" defer></script>
+    <script src="/redirect.js" defer></script>
+  </head>
+  <body>
+
+    <nav>
+      <img class="nav-logo" src="/images/WeMat_Logo.png" alt="company_logo " />
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/add">Add</a></li>
+        <li><a href="/edit">Edit</a></li>
+      </ul>
+      <button id="log-out-btn" class="log-btn">Log-out</button>
+    </nav>
+
+    <div class="container-select">
+      <h1 class="select-title">Search by material name:</h1>
+      <form method="POST" action="/editMaterials">
+      <label for="material_name"></label>
+      <input type="text" name="material_name" id="search-mat" required/>
+      <button>Search</button>
+       {{#if message}}<h4 class="alert alert-danger">{{message}}</h4>{{/if}}
+      </form>
+<div class="container">
+      <form class="form-style" id="search-form" action="matEdited" method="POST">
+        <h3 class="form-title">Material Db</h3>
+        <label for="materialId">ID:</label>
+        <input class="form-input" name="materialId" {{#if material_id}} value={{material_id}} {{/if}}  type="text" id="material-id-input" />
+        <label for="materialName"> Material Name:</label>
+        <input
+          class="form-input"
+          name="materialName"
+          type="text"
+          id="material-name"
+         {{#if material_name}}
+          value={{material_name}}
+          {{/if}}
+          
+        />
+        <label for="dpdType">Material Pieces per box:</label>
+        <input
+          class="form-input"
+          name="materialPiecesBox"
+          type="number"
+          id="material-pieces-box"
+          {{#if material_pieces_box}}
+          value={{material_pieces_box}}
+          {{/if}}
+          
+        />
+        <label for="materialSqmBox">Material Sqm per Box</label>
+        <input
+          class="form-input"
+          name="materialSqmBox"
+          type="number"
+          id="material-sqm-box"
+            {{#if material_sqm_box}}
+          value = {{material_sqm_box}}
+          {{/if}}
+        />
+        <label for="materialWeightBox">Material Weight per Box:</label>
+        <input
+          class="form-input"
+          name="materialWeightBox"
+          type="number"
+          id="material-weight-box"
+          {{#if material_weight_box}}
+          value ={{material_weight_box}}
+          {{/if}}
+        />
+        <label for="materialBoxesPallet">Material Boxes per Pallet</label>
+        <input
+          class="form-input"
+          name="materialBoxesPallet"
+          type="number"
+          id="material-boxes-pallet"
+             {{#if material_box_pallet}}
+          value = {{material_box_pallet}} 
+          {{/if}}
+        />
+ 
+ <label for="materialWeightPallet">Material Boxes per Pallet</label>
+        <input
+          class="form-input"
+          name="materialWeightPallet"
+          type="number"
+          id="material-weight-pallet"
+             {{#if material_weight_pallet}}
+          value = {{material_weight_pallet}} 
+          {{/if}}
+        />
+
+        <button class="add-btn" id="edit-btn-mat" type="submit">Save</button>
+      </form>
+    </div>
+
+
+    </div>
+    </div>
+  </body>
+</html>

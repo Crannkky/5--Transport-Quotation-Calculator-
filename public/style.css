@@ -1,0 +1,327 @@
+body {
+  background-image: url(./images/background.png);
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  */
+/* register & login style */
+/*  */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.register-title {
+  text-transform: uppercase;
+  color: #006d6a;
+  padding: 0.4rem;
+  box-shadow: 0.5rem 0.5rem #e0a900;
+}
+
+.logo {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 1.5rem;
+}
+
+.register-alert {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: solid 2px black;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 15rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px #006d6a;
+}
+
+.register-btn {
+  width: 10rem;
+  border: solid 2px #006d6a;
+  border-radius: 10px;
+  background: #006d6a;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem #e0a900;
+}
+
+.register-btn:hover {
+  background-color: #e0a900;
+  color: black;
+  transition: ease;
+  box-shadow: 0.2rem 0.2rem #006d6a;
+}
+/*  */
+/* homepage style */
+/*  */
+
+nav {
+  background-color: white;
+  border-bottom: solid 3px #006d6a;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-btn {
+  height: 2.5rem;
+  width: 7rem;
+  margin-right: 2rem;
+  border: solid 2px #006d6a;
+  border-radius: 10px;
+  background: #006d6a;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem #e0a900;
+}
+.log-btn:hover {
+  background-color: #e0a900;
+  color: black;
+  transition: ease;
+  box-shadow: 0.2rem 0.2rem #006d6a;
+}
+
+.nav-logo {
+  width: 8rem;
+  height: 8rem;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-right: 1.5rem;
+}
+.nav-list li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+li a {
+  color: #006d6a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-greet {
+  font-size: 2rem;
+  color: #006d6a;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  gap: 5rem;
+  margin-top: 6rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.home-text {
+  font-size: 1.4rem;
+  color: #006d6a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-btn {
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 100px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #e0a900;
+}
+
+.alert {
+  color: red;
+}
+
+/* ADD FORM STYLE - ADD DATA PAGE */
+.container-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-title {
+  color: #006d6a;
+}
+
+.db-select-style {
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.db-select-btn-style {
+  width: 10rem;
+  border: solid 2px #006d6a;
+  border-radius: 10px;
+  background: #006d6a;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem #e0a900;
+}
+
+.db-select-btn-style:hover {
+  background-color: #e0a900;
+  color: black;
+  transition: ease;
+  box-shadow: 0.2rem 0.2rem #006d6a;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: solid 2px #006d6a;
+  border-radius: 25px;
+  padding: 2rem;
+  background-color: white;
+}
+
+.add-btn {
+  width: 10rem;
+  border: solid 2px #006d6a;
+  border-radius: 10px;
+  background: #006d6a;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem #e0a900;
+}
+
+.register-btn:hover {
+  background-color: #e0a900;
+  color: black;
+  transition: ease;
+  box-shadow: 0.2rem 0.2rem #006d6a;
+}
+
+.form-title {
+  text-transform: uppercase;
+  color: #006d6a;
+}
+
+.hide {
+  display: none;
+}
+
+.container-succes {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container-edited {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10rem;
+}
+
+.table-view {
+  margin-top: 4rem;
+  border: solid 4px #006d6a;
+}
+
+.row-table {
+  display: flex;
+  gap: 0.2rem;
+}
+
+tr {
+  border: solid 2px #006d6a;
+}
+
+tr th {
+  border: solid 2px #006d6a;
+  background-color: #e0a900;
+  color: black;
+  text-transform: uppercase;
+}

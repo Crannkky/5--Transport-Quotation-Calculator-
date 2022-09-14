@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Transport Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/log-out.js" defer></script>
+    <script src="/redirect.js" defer></script>
+  </head>
+  <body>
+
+    <nav>
+      <img class="nav-logo" src="/images/WeMat_Logo.png" alt="company_logo " />
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/add">Add</a></li>
+        <li><a href="/edit">Edit</a></li>
+      </ul>
+      <button id="log-out-btn" class="log-btn">Log-out</button>
+    </nav>
+
+    <div class="container-select">
+      <h1 class="select-title">Search by ID:</h1>
+      <form method="POST" action="auth/searchResult">
+      <label for="trans_id">ID</label>
+      <input type="text" name="trans_id" id="search-dpd" required/>
+      <label for="trans_weight">weight</label>
+      <input type="number" name="trans_weight" id="search-weight-dpd" required/>
+      <button>Search</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

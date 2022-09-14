@@ -1,0 +1,215 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Transport Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/displayAddForm.js" defer></script>
+    <sript src="/createDataAdd.js"></sript>
+  </head>
+  <body>
+
+    <nav>
+      <img class="nav-logo" src="/images/WeMat_Logo.png" alt="company_logo " />
+      <ul class="nav-list">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/add">Add</a></li>
+        <li><a href="/edit">Edit</a></li>
+      </ul>
+      <button id="log-out-btn" class="log-btn">Log-out</button>
+    </nav>
+
+    <div class="container-select">
+
+      <h1 class="select-title">In which databse you want to add new information?</h1>
+      <select name="databases" id="db-select" class="db-select-style">
+        <option value="dpd-local">DPD</option>
+        <option value="raben-local">Raben</option>
+        <option value="material-types">Materials</option>
+      </select>
+      <button id="db-btn" class="db-select-btn-style">Select</button>
+      {{#if message}}
+        <h4 class="alert alert-danger">{{message}}</h4>
+      {{/if}}
+    </div>
+
+    <div class="form-container">
+      {{! /////////////////////////////////////// }}
+      {{! /////////////////////////////////////// }}
+      {{! DPD ADD DATA FORM }}
+      <form
+        class="form-style hide"
+        id="dpd-form"
+        action="/dataDPD"
+        method="POST"
+      >
+        <h3 class="form-title">DPD</h3>
+        <label for="dpdId">ID:</label>
+        <input class="form-input" name="dpdId" type="text" id="dpd-id-input" />
+        <label for="dpdName"> Transporter Name:</label>
+        <input
+          class="form-input"
+          name="dpdName"
+          type="text"
+          id="dpd-name"
+          value="DPD"
+          readonly
+        />
+        <label for="dpdType">Transport type:</label>
+        <input
+          class="form-input"
+          name="dpdType"
+          type="text"
+          id="dpd-type"
+          value="local"
+          readonly
+        />
+        <label for="dpdWeight">Transport weight</label>
+        <input
+          class="form-input"
+          name="dpdWeight"
+          type="number"
+          id="dpd-weight"
+        />
+        <label for="dpdQuantity">Transport pallet quantity:</label>
+        <input
+          class="form-input"
+          name="dpdQuantity"
+          type="number"
+          id="dpd-quantity"
+        />
+        <label for="dpdPrice">Transport price:</label>
+        <input
+          class="form-input"
+          name="dpdPrice"
+          type="number"
+          id="dpd-price"
+        />
+        <button class="add-btn" id="add-btn-dpd" type="submit">Add</button>
+
+      </form>
+      {{! /////////////////////////////////////// }}
+      {{! /////////////////////////////////////// }}
+      {{! RABEN ADD DATA FORM }}
+
+      <form
+        class="form-style hide"
+        id="raben-form"
+        action="/dataRaben"
+        method="POST"
+      >
+        <h3 class="form-title">Raben</h3>
+        <label for="rabenId">ID:</label>
+        <input
+          class="form-input"
+          name="rabenId"
+          type="text"
+          id="raben-id-input"
+        />
+        <label for="rabenName"> Transporter Name:</label>
+        <input
+          class="form-input"
+          name="rabenName"
+          type="text"
+          id="raben-name"
+          value="Raben"
+          readonly
+        />
+        <label for="rabenType">Transport type:</label>
+        <input
+          class="form-input"
+          name="rabenType"
+          type="text"
+          id="raben-type"
+          value="local"
+          readonly
+        />
+        <label for="rabenWeight">Transport weight</label>
+        <input
+          class="form-input"
+          name="rabenWeight"
+          type="number"
+          id="raben-weight"
+        />
+        <label for="rabenQuantity">Transport pallet quantity:</label>
+        <input
+          class="form-input"
+          name="rabenQuantity"
+          type="number"
+          id="raben-quantity"
+        />
+        <label for="rabenPrice">Transport price:</label>
+        <input
+          class="form-input"
+          name="rabenPrice"
+          type="number"
+          id="raben-price"
+        />
+        <button class="add-btn" id="add-btn-raben" type="submit">Add</button>
+      </form>
+      {{! /////////////////////////////////////// }}
+      {{! /////////////////////////////////////// }}
+      {{! MATERIAL ADD DATA FORM }}
+
+      <form
+        class="form-style hide"
+        id="material-form"
+        action="auth/dataMat"
+        method="POST"
+      >
+        <h3 class="form-title">Materials</h3>
+        <label for="materialId">ID:</label>
+        <input
+          class="form-input"
+          name="materialId"
+          type="text"
+          id="material-id-input"
+        />
+        <label for="materialName"> Material Name:</label>
+        <input
+          class="form-input"
+          name="materialName"
+          type="text"
+          id="material-name"
+        />
+        <label for="materialPieces">Material pieces per box:</label>
+        <input
+          class="form-input"
+          name="materialPieces"
+          type="number"
+          id="material-pieces-box"
+        />
+        <label for="materialSqm">Material SQM per box:</label>
+        <input
+          class="form-input"
+          name="materialSqm"
+          type="number"
+          id="material-sqm-box"
+        />
+        <label for="materialWeight">Material WEIGHT per box:</label>
+        <input
+          class="form-input"
+          name="materialWeight"
+          type="number"
+          id="material-weight-box"
+        />
+        <label for="materialPallet">Material BOX per PALLET:</label>
+        <input
+          class="form-input"
+          name="materialPallet"
+          type="number"
+          id="material-box-pallet"
+        />
+        <label for="materialWeightPal">Material WEIGHT per PALLET:</label>
+        <input
+          class="form-input"
+          name="materialWeightPal"
+          type="number"
+          id="material-weight-pallet"
+        />
+        <button class="add-btn" id="add-mat-btn" type="submit">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
