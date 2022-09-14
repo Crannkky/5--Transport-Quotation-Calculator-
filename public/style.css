@@ -1,5 +1,5 @@
 body {
-  background-image: url(./images/background.png);
+  background-color: black;
   background-size: cover;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
@@ -20,9 +20,9 @@ header {
 
 .register-title {
   text-transform: uppercase;
-  color: #006d6a;
+  color: white;
   padding: 0.4rem;
-  box-shadow: 0.5rem 0.5rem #e0a900;
+  box-shadow: 0.5rem 0.5rem red;
 }
 
 .logo {
@@ -47,8 +47,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
   gap: 1rem;
-  border: solid 2px black;
+  border: solid 2px red;
   border-radius: 25px;
   padding: 2rem;
 }
@@ -67,27 +68,27 @@ header {
   height: 2rem;
   text-align: center;
   border-radius: 10px;
-  border: solid 2px #006d6a;
+  border: solid 2px red;
 }
 
 .register-btn {
   width: 10rem;
-  border: solid 2px #006d6a;
+  border: solid 2px black;
   border-radius: 10px;
-  background: #006d6a;
+  background: black;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   padding: 0.5rem;
-  box-shadow: 0.2rem 0.2rem #e0a900;
+  box-shadow: 0.2rem 0.2rem red;
 }
 
 .register-btn:hover {
-  background-color: #e0a900;
+  background-color: red;
   color: black;
   transition: ease;
-  box-shadow: 0.2rem 0.2rem #006d6a;
+  box-shadow: 0.2rem 0.2rem black;
 }
 /*  */
 /* homepage style */
@@ -95,7 +96,7 @@ header {
 
 nav {
   background-color: white;
-  border-bottom: solid 3px #006d6a;
+  border-bottom: solid 3px red;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -106,21 +107,21 @@ nav {
   height: 2.5rem;
   width: 7rem;
   margin-right: 2rem;
-  border: solid 2px #006d6a;
+  border: solid 2px black;
   border-radius: 10px;
-  background: #006d6a;
+  background: black;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   padding: 0.5rem;
-  box-shadow: 0.2rem 0.2rem #e0a900;
+  box-shadow: 0.2rem 0.2rem red;
 }
 .log-btn:hover {
-  background-color: #e0a900;
+  background-color: red;
   color: black;
   transition: ease;
-  box-shadow: 0.2rem 0.2rem #006d6a;
+  box-shadow: 0.2rem 0.2rem black;
 }
 
 .nav-logo {
@@ -139,7 +140,7 @@ nav {
 }
 
 li a {
-  color: #006d6a;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -157,7 +158,7 @@ li:hover {
 
 .home-greet {
   font-size: 2rem;
-  color: #006d6a;
+  color: white;
   font-weight: bold;
 }
 
@@ -175,7 +176,7 @@ li:hover {
 }
 .home-text {
   font-size: 1.4rem;
-  color: #006d6a;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -188,12 +189,12 @@ li:hover {
   font-weight: bold;
   border: solid 2px black;
   border-radius: 100px;
-  background-color: white;
+  background-color: black;
   cursor: pointer;
 }
 
 .home-btn:hover {
-  background-color: #e0a900;
+  background-color: red;
 }
 
 .alert {
@@ -211,7 +212,7 @@ li:hover {
 }
 
 .select-title {
-  color: #006d6a;
+  color: white;
 }
 
 .db-select-style {
@@ -222,22 +223,22 @@ li:hover {
 
 .db-select-btn-style {
   width: 10rem;
-  border: solid 2px #006d6a;
+  border: solid 2px black;
   border-radius: 10px;
-  background: #006d6a;
+  background: black;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   padding: 0.5rem;
-  box-shadow: 0.2rem 0.2rem #e0a900;
+  box-shadow: 0.2rem 0.2rem red;
 }
 
 .db-select-btn-style:hover {
-  background-color: #e0a900;
+  background-color: red;
   color: black;
   transition: ease;
-  box-shadow: 0.2rem 0.2rem #006d6a;
+  box-shadow: 0.2rem 0.2rem black;
 }
 
 .form-container {
@@ -252,7 +253,7 @@ li:hover {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  border: solid 2px #006d6a;
+  border: solid 2px red;
   border-radius: 25px;
   padding: 2rem;
   background-color: white;
@@ -260,27 +261,27 @@ li:hover {
 
 .add-btn {
   width: 10rem;
-  border: solid 2px #006d6a;
+  border: solid 2px black;
   border-radius: 10px;
-  background: #006d6a;
+  background: black;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   padding: 0.5rem;
-  box-shadow: 0.2rem 0.2rem #e0a900;
+  box-shadow: 0.2rem 0.2rem red;
 }
 
 .register-btn:hover {
-  background-color: #e0a900;
+  background-color: red;
   color: black;
   transition: ease;
-  box-shadow: 0.2rem 0.2rem #006d6a;
+  box-shadow: 0.2rem 0.2rem black;
 }
 
 .form-title {
   text-transform: uppercase;
-  color: #006d6a;
+  color: white;
 }
 
 .hide {
@@ -307,7 +308,7 @@ li:hover {
 
 .table-view {
   margin-top: 4rem;
-  border: solid 4px #006d6a;
+  border: solid 4px red;
 }
 
 .row-table {
@@ -316,12 +317,12 @@ li:hover {
 }
 
 tr {
-  border: solid 2px #006d6a;
+  border: solid 2px red;
 }
 
 tr th {
-  border: solid 2px #006d6a;
-  background-color: #e0a900;
+  border: solid 2px red;
+  background-color: white;
   color: black;
   text-transform: uppercase;
 }
